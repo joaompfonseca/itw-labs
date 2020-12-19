@@ -1,0 +1,66 @@
+﻿body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div.top {
+    margin: 0 5% 0 5%
+}
+div.banner {
+    height: 500px;
+    margin: auto;
+    background-image: url(image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-y: 25%
+    
+}
+div.content {
+    float: left;
+    height: 500px;
+    width: 75%;
+    margin-left: 5%;
+    margin-bottom: 5px
+}
+div.ads {
+    background-color: yellow;
+    float: right;
+    height: 500px;
+    width: 15%;
+    margin-right: 5%
+}
+#footer {
+    border-top: 2px solid #444;
+    height: 50px;
+    margin: 0 5% 0 5%;
+    padding-top: 25px
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333
+}
+li{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+li:last-of-type {
+    border-right: none;
+    float: right
+}
+li a {
+    display: block; 
+    color: white; 
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none
+}
+li a:hover {
+    background-color: #5CAF50
+}
+li a:active {
+    color: #444
+}

@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>2.5 - Tables</title>
+    <style>
+        body, input, select, textarea {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+            input[type=submit], input[type=reset] {
+                padding: 0.375rem 0.75rem;
+                font-size: 1rem;
+            }
+
+            select, input[type=text], input[type=password] {
+                font-size: 1rem;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+                width: 100%;
+            }
+
+        fieldset {
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+
+        textarea {
+            width: 100%;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center">Informação pessoal</h1>   
+    <form name="PersonData" action="http://192.168.160.36/FormEcho.aspx" method="post">
+        <input type="hidden" name="FormName" value="UserForm" />
+        <table width="800px" style="margin:auto">
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Informação pessoal</legend>
+                        <table width="100%">
+                            <tr>
+                                <td width="15%">
+                                    <label for="curso">Curso:</label>
+                                </td>
+                                <td>
+                                    <select class="stretch" name="Curso" id="curso">
+                                        <option value="1">Licenciatura em Engenharia Informática</option>
+                                        <option value="2">Mestrado Integrado em Engenharia de Computadores e Telemática</option>
+                                        <option value="3">Mestrado Integrado em Engenharia Eletrónica e Telecomunicações</option>
+                                        <option value="4">Outro</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="nome">Nome:</label>
+                                </td>
+                                <td>
+                                    <input class="stretch" type="text" id="nome" name="FirstName" placeholder="Nome" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="snome">Sobrenome:</label>
+                                </td>
+                                <td>
+                                    <input class="stretch" type="text" id="snome" name="LastName" placeholder="Sobrenome" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pass">Palavra-Passe:</label>
+                                </td>
+                                <td>
+                                    <input class="stretch" type="password" id="pass" name="Password" placeholder="Digite a palavra passe" />
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend><label for="comments">Comentários:</label></legend>
+                        <textarea rows="4" cols="120" id="comments" name="Comments" placeholder="Insira os seus comentários"></textarea>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td width="400px" valign="top">
+                    <fieldset>
+                        <legend><label for="trans">Meios de transporte</label></legend>
+                        <input type="checkbox" id="trans" name="vehicle" value="Bicicleta" />Bicicleta<br />
+                        <input type="checkbox" id="trans" name="vehicle" value="Carro" />Carro<br />
+                        <input type="checkbox" id="trans" name="vehicle" value="Comboio" />Comboio<br />
+                    </fieldset>
+                </td>
+                <td valign="top">
+                    <fieldset>
+                        <legend><label for="cor">Cor preferida</label></legend>
+                        <input type="radio" id="cor" name="color" value="Azul" />Azul<br />
+                        <input type="radio" id="cor" name="color" value="Verde" />Verde<br />
+                        <input type="radio" id="cor" name="color" value="Vermelho" />Vermelho<br />
+                        <input type="radio" id="cor" name="color" value="Outra" />Outra<br />
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td  height="50px" align="right" valign="bottom">
+                    <input type="Submit" name="Button" />
+                </td>
+                <td align="left" valign="bottom">
+                    <input type="reset" name="resetBtn" value="Limpar" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
